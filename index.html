@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Anass Chammami</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      color: white;
+    }
+    video.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: scale(1.2);
+  filter: none;
+}
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 260px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 1);
+      backdrop-filter: blur(8px);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+    .sidebar h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .sidebar nav a {
+      display: block;
+      margin: 10px 0;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sidebar nav a:hover {
+        color: #00FF41;
+    }
+    .sidebar .cv-link {
+      margin-top: 20px;
+      background-color: #00FF41;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .contact-info {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* was center */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  color: #00FF41;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.contact-item span {
+  color: white;
+}
+
+.contact-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+  color: #00FF41;
+}
+
+
+    
+    .main {
+  margin-left: 280px;
+  padding: 40px;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1); /* softened black layer behind content */
+  border-radius: 10px;
+  backdrop-filter: blur(0.5px);
+}
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      border-bottom: 2px solid #00FF41;
+      display: inline-block;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .career-list {
+  list-style: none;
+  padding: 0;
+}
+
+.career-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.year {
+  width: 110px;
+  color: whitesmoke;
+  font-size: 13px;
+  font-family: 'Courier New', monospace;
+  margin-right: 20px;
+}
+
+.description {
+  font-size: 15px;
+}
+    @media (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      .main {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="bg-video">
+    <source src="matrix-code-rain-moewalls-com.mp4" type="video/mp4" />
+  </video>
+
+  <div class="sidebar">
+    <img src="" alt="Anass Chammami" onerror="this.src='https://via.placeholder.com/120'" />
+    <h1>Anass Chammami</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>anasschammami04@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+212 6 71 06 36 05</span>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/aan4s" target="_blank">GitHub</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/anass-chammami-78ab25304/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="main">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m Anass Chammami, a 21-year-old Moroccan cybersecurity student at Mohammed V University in Rabat.
+      I'm a curious and motivated computer science graduate who loves exploring technology, building projects,
+      and learning new things. I’m especially interested in cybersecurity, software development, and everything
+      that challenges me to think and create.</p>
+    </section>
+    <section id="Carrer">
+        <h2>Carrer</h2>
+        <ul class="career-list">
+            <li>
+              <span class="year">2024-2025</span>
+              <span class="description">1st year Master’s in Cybersecurity, Mohammed V University of Rabat, Morocco</span>
+            </li>
+            <li>
+              <span class="year">2021-2024</span>
+              <span class="description">Bachelor’s degree in Mathematics and Computer Science, Mohammed V University of Rabat, Morocco</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+  </div>
+</body>
+</html>
